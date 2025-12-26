@@ -484,7 +484,7 @@ services:
     restart: unless-stopped
     ports:
       - 6432:5432
-      - ${POOLER_PROXY_PORT_TRANSACTION}:6543
+      - 6544:6543
     volumes:
       - ./volumes/pooler/pooler.exs:/etc/pooler/pooler.exs:ro,z
     healthcheck:
